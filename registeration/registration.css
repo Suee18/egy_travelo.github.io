@@ -36,6 +36,8 @@ body {
 	font-weight: 300;
 	margin: 0;
 	margin-bottom: 1.25rem;
+	font-family: castellar;
+
 }
 
 .link {
@@ -155,10 +157,10 @@ body {
 
 .btn {
 	background-color: var(--blue);
-	background: linear-gradient(109.6deg, rgb(255, 219, 47) 11.2%, rgb(244, 253, 0) 100.2%);
+	background: #033f76;
 	border-radius: 20px;
 	border: 1px solid var(--yellow);
-	color: var(--black);
+	color: var(--white);
 	cursor: pointer;
 	font-size: 0.8rem;
 	font-weight: bold;
@@ -304,6 +306,3 @@ input[type="date"] {
   small{
 	color: red;
   }
-
-
-
