@@ -8,7 +8,7 @@ body {
   margin: 0;
   padding: 0;
   color: black;
-  background-color: #f6f0e0;
+  background-color: #033f76    ;
   font-weight: 600;
   width: 100%;
   overflow-x: hidden;
@@ -24,6 +24,13 @@ opacity: 0.05;
     font-size:1.6rem;
     margin-left: 0.5rem;
   }
+  .image-logo{
+    width: 5rem;
+    height: 5rem;
+  }
+  .logo-div{
+    display: flex;
+  }
   header{
     position: fixed;
     width: 100%;
@@ -33,14 +40,14 @@ opacity: 0.05;
     top: 0;
     left: 0;
     backdrop-filter: blur(2px);
-    background-color: #f6f0e091;
+    background-color: #033e7640;
     transition: background-color 0.3s ease;
   }
   header.scrolled {
     background-color: #777;
   }
   header nav{
-    color: #eb7363;
+    color: #bc863e;
     font-weight: 600;
     max-width: 1400px;
     margin: 0 auto;
@@ -60,7 +67,7 @@ opacity: 0.05;
     text-transform: uppercase;
     font-weight: 550;
     font-size: 1.23rem;
-    color: #eb7363;
+    color: #bc863e;
     
   }
 .container {
@@ -109,7 +116,7 @@ opacity: 0.05;
   overflow: hidden;
   cursor: grab;
   position: relative;
-  border: 10px solid #e97367;
+  border: 10px solid #bc863e;
   filter: grayscale(0) brightness(80%);
 }
 .card:hover{
@@ -370,7 +377,7 @@ div.overlay a.leave:after {
     align-items: center;
     background: url(blue\ -\ Copy.png),radial-gradient(
     circle,
-    rgba(236, 113, 105, 0.2) 30%,
+    rgba(3, 63, 118, 0.1) 10%,
     rgba(246, 240, 224, 0.5) 80%
   );
     background-size: cover;
@@ -388,7 +395,7 @@ div.overlay a.leave:after {
     font-size: 2.5rem;
     font-weight: 800;
     text-align: center;
-    color: #ec7169;
+    color: #033f76;
     margin: 10px 0 30px;
     text-transform: uppercase;
   }
@@ -396,7 +403,7 @@ div.overlay a.leave:after {
     
     align-items: center;
     text-align: center;
-    
+    filter: brightness(0) invert(2);;
   }
   #line-3{
       margin-bottom: 50px;
@@ -405,6 +412,7 @@ div.overlay a.leave:after {
     text-align: left;
     padding-left: 10px;
     font-size: 1.5rem;
+    color: #f9fce3;
   }
   .swiper-wrapper {
     display: flex; 
@@ -417,7 +425,7 @@ div.overlay a.leave:after {
   }
   
   .swiper-wrapper::-webkit-scrollbar-thumb {
-    background-color: #e97367; 
+    background-color: #033f76; 
     border-radius: 10px; 
   }
   .swiper-slide {
@@ -434,8 +442,8 @@ div.overlay a.leave:after {
     font-size: 1rem;
     font-weight: 500;
     color: var(--clr-text);
-    background: rgba(236, 113, 105, 0.2);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    background: rgba(3, 63, 118, 0.2);
+    box-shadow: 0 4px 30px rgba(251, 250, 250, 0.1);
     border-radius: 10px;
     padding: 16px 16px 0;
     margin-bottom: 16px;
@@ -519,7 +527,7 @@ div.overlay a.leave:after {
   }
   /******************************/
   .contact {
-    background-color: #ec72693d;
+    background-color: #bc853e97;
     color: black;
     width: 100vw;
     height: 25vh;
