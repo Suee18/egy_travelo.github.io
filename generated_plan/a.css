@@ -3,7 +3,21 @@
 ::after {
     box-sizing: border-box;
 }
+#home{
+    background-color: #ffffff00;
+}
+#about{
+    background-color: #09163dc0;
 
+}
+#price{
+    background-color: #07948dde;
+
+}
+#contact{
+    background-color: #051549de;
+
+}
 body
 {
     position: relative;
@@ -16,7 +30,6 @@ body
     font-family: "Montserrat", sans-serif;
     font-size: 62.5%;
     color: #f4f4f4;
-    background-color: #1d1e22;
 }
 
 .scrolls {
@@ -49,17 +62,15 @@ body
     scroll-snap-type: y mandatory;
 }
 
-/* .header {
-    position: fixed;
+.header {
+    position:absolute;
     top: 0;
     z-index: 1;
     display: flex;
     width: 100%;
     min-height: 60px;
     font-size: 1rem;
-    background-image: linear-gradient(180deg, #1d1e22, rgba(29, 30, 34, 0.1), transparent);
-    mix-blend-mode: luminosity;
-} */
+background-color: #f4f4f4;} 
 
 .header ul {
     margin: 0;
@@ -80,7 +91,7 @@ body
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 600;
-    color: #6216bf;
+    color: #fbf8ff;
 }
 
 .header ul li a::after {
@@ -95,7 +106,7 @@ body
 
 .header ul li a:hover::after {
     width: 100%;
-    background-color: #f4f4f4;
+    background-color: #b35353;
 }
 
 section {
@@ -107,9 +118,9 @@ section {
     align-items: center;
     justify-content: center;
     font-size: 1rem;
-    background-color: #f4f4f4;
+    background-color: #f8f3f3;
     /* background-image: url(https://loremflickr.com/1920/1080?random=55); */
-    background-color: #6216bf;
+    background-color: #fdfdfd;
     background-size: cover;
     scroll-snap-align: center;
 }
@@ -119,7 +130,7 @@ section h2 {
     font-size: 2.25rem;
     font-weight: 900;
     padding: 0.5em 1em;
-    color: #1d1e22;
+    color: #973333;
     background-color: #f4f4f4;
     mix-blend-mode: screen;
     border-radius: 0.25em;
@@ -158,7 +169,6 @@ section:nth-child(5) {
     width: 50%;
     height: 50px;
     z-index: 1;
-    background-color: #0f31bb;
 }
 
 
@@ -207,7 +217,7 @@ section:nth-child(5) {
     /* Set a fixed width for each image holder */
     height: 300px;
     /* Set a fixed height for each image holder */
-    background-color: #5d141400;
+    background-color: #503c3c00;
     /* Optional: a background color for image holders */
     display: flex;
     /* Use flex to center images inside the div */
@@ -221,18 +231,19 @@ section:nth-child(5) {
 #searchContainer{
     flex: 0 0 auto;
     /* Elements do not grow or shrink but are based on content size */
-    width: 100px;
+    width: 700px;
     /* Set a fixed width for each image holder */
-    height: 100px;
+    height: 300px;
     /* Set a fixed height for each image holder */
-    background-color: #ffffff00;
+    background-color: #5d141400;
     /* Optional: a background color for image holders */
     display: flex;
-    /* Use flex to center images inside the div */
+    /* Use flex block center images inside the div */
     align-items: center;
     /* Center images vertically */
     justify-content: center;
     /* Center images horizontally */
+
 }
 .ticketHolder img {
     max-width: 100%;

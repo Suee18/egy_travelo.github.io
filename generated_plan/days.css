@@ -11,7 +11,7 @@ body {
     display: flex;
     justify-content: start;
     align-items: center;
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
     
 }
 
@@ -149,7 +149,7 @@ input:checked + label .description {
 .card[for="c1"]{
     background-image: url(imaqge.png);
 } */
-.card[for="c2"]{
+/* .card[for="c2"]{
     background-image: url(imaqge.png);
 }.card[for="c3"]{
     background-image: url(imaqge.png);
@@ -161,7 +161,7 @@ input:checked + label .description {
 }
 .card[for="c6"]{
     background-image: url(vasw.png);
-}
+} */
 #btn3, #btn1{
     background-color: #007BFF;
     color: white;
