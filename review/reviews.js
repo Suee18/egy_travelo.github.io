@@ -30,3 +30,38 @@ addReviewButton.addEventListener('click', () => {
   const boxContainer = document.querySelector('.box-container');
   boxContainer.appendChild(newReview);
 });
+
+
+
+
+// nav bar
+
+document.addEventListener("DOMContentLoaded", function() {
+  const menuIcon = document.getElementById("menu-icon");
+  const sideMenu = document.getElementById("side-menu");
+  const menu = document.querySelector(".menu");
+  const profile = document.querySelector(".profile");
+  const sideMenuLinks = document.querySelectorAll('.side-menu-link');
+
+  menuIcon.addEventListener("click", function() {
+      sideMenu.classList.toggle("open");
+      if (sideMenu.classList.contains("open")) {
+          menu.style.marginLeft = "15rem";
+          profile.style.display= "none";
+      } else {
+          menu.style.marginLeft = "0";
+          profile.style.display="block";
+      }
+  });
+
+  sideMenuLinks.forEach(function(link) {
+      link.addEventListener('click', function() {
+          // Remove 'active' class from all links
+          sideMenuLinks.forEach(function(link) {
+              link.classList.remove('active');
+          });
+          // Add 'active' class to the clicked link
+          link.classList.add('active');
+      });
+  });
+});
