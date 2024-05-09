@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="container">
+        <!-- =========== Navigation =========== -->
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa-solid fa-mountain-city"></i></span>
+                        <span class="title">Travelo</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa-solid fa-users"></i></span>
+                        <span class="title">Users</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa-solid fa-chart-simple"></i></span>
+                        <span class="title">Statistics</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa-solid fa-question"></i></span>
+                        <span class="title">Pending Questions</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa-solid fa-right-from-bracket"></i></span>
+                        <span class="title">Log Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- =========== Content =========== -->
+        <div class="main">
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="numbers">1,115</div>
+                        <div class="cardName">Daily Views</div>
+                    </div>
+                    <div class="iconBox"><i class="fa-solid fa-eye"></i></div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">80</div>
+                        <div class="cardName">Plans Generated</div>
+                    </div>
+                    <div class="iconBox"><i class="fa-solid fa-map-location-dot"></i></div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">29</div>
+                        <div class="cardName">Reviews</div>
+                    </div>
+                    <div class="iconBox"><i class="fa-solid fa-comments"></i></div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">$7,416</div>
+                        <div class="cardName">Earning</div>
+                    </div>
+                    <div class="iconBox"><i class="fa-solid fa-money-bills"></i></div>
+                </div>
+
+                
+
+            </div>
+            <div class="details">
+                <div class="users">
+                    <div class="cardHeader">
+                        <h2>Customers</h2>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Avatar</td>
+                                <td>Name</td>
+                                <td>Nationality</td>
+                                <td>Gender</td>
+                                <td>Subscription</td>
+                                <td>Actions</td>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td><img class="avatars" src="Avatars/avatar1.png" alt="Avatar"></td>
+                                <td>Mohamed Elsrougy</td>
+                                <td>American</td>
+                                <td>Male</td>
+                                <td><span class="essential">Essential</span></td>
+                                <td>
+                                    <button class="btn" id="edit-btn" onclick="Edit(this)">Edit</button>
+                                    <button class="btn" id="delete-btn" onclick="Delete(this)">Delete</button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><img class="avatars" src="Avatars/avatar8.png" alt="Avatar"></td>
+                                <td>Salma Sherif</td>
+                                <td>Croatian</td>
+                                <td>Female</td>
+                                <td><span class="premium">Premium</span></td>
+                                <td>
+                                    <button class="btn" id="edit-btn" onclick="Edit(this)">Edit</button>
+                                    <button class="btn" id="delete-btn" onclick="Delete(this)">Delete</button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><img class="avatars" src="Avatars/avatar4.png" alt="Avatar"></td>
+                                <td>Mohamed Ashraf</td>
+                                <td>Indian</td>
+                                <td>Male</td>
+                                <td><span class="extra">Extra</span></td>
+                                <td>
+                                    <button class="btn" id="edit-btn" onclick="Edit(this)">Edit</button>
+                                    <button class="btn" id="delete-btn" onclick="Delete(this)">Delete</button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><img class="avatars" src="Avatars/avatar10.png" alt="Avatar"></td>
+                                <td>Nada Khaled</td>
+                                <td>Australian</td>
+                                <td>Female</td>
+                                <td><span class="premium">Premium</span></td>
+                                <td>
+                                    <button class="btn" id="edit-btn" onclick="Edit(this)">Edit</button>
+                                    <button class="btn" id="delete-btn" onclick="Delete(this)">Delete</button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><img class="avatars" src="Avatars/avatar6.png" alt="Avatar"></td>
+                                <td>Hana Mohamed</td>
+                                <td>English</td>
+                                <td>Female</td>
+                                <td><span class="premium">Premium</span></td>
+                                <td>
+                                    <button class="btn" id="edit-btn" onclick="Edit(this)">Edit</button>
+                                    <button class="btn" id="delete-btn" onclick="Delete(this)">Delete</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="details-container2" id="details-container2">
+                    <div class="details-content2">
+                        <h2>Edit User</h2>
+                        <form id="edit-form">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                            <label for="nationality">Nationality:</label>
+                            <input type="text" id="nationality" name="nationality" required>
+                            <label for="gender">Gender:</label>
+                            <select id="gender" name="gender" required>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                            <label for="subscription">Subscription:</label>
+                            <select id="subscription" name="subscription" required>
+                                <option value="Essential">Essential</option>
+                                <option value="Premium">Premium</option>
+                                <option value="Extra">Extra</option>
+                            </select>
+                            <button type="submit" class="save-btn" id="save-btn">Save</button>
+                        </form>
+                    </div>
+                    <button class="close-btn" id="close-btn2">Close</button>
+                </div>
+            </div>
+            
+            
+        </div>
+        <div class="details-container" id="details-container">
+            <div class="details-content">
+            </div>
+            <button class="close-btn" id="close-btn">Close</button>
+            <button class="yes-btn" id="yes-btn">Yes</button>
+        </div>
+        
+</div>
+    <script src="admin.js"></script>
+</body>
+</html>

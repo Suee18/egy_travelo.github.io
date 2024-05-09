@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    font-family: "Ubuntu";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --blue: #2a2185;
+    --white: #fff;
+    --grey: #f5f5f5;
+    --black1: #222;
+    --black2: #999;
+}
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+}
+
+.navigation{
+    position: fixed;
+    width: 40rem;
+    height: 100%;
+    background: var(--blue);
+    border-left: 1rem solid var(--blue);
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.navigation ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navigation ul li{
+    position: relative;
+    width: 100%;
+    list-style: none;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    transition: all 0.3s;
+}
+
+.navigation ul li:hover, .navigation ul li.hovered{
+    background-color: var(--white);
+}
+
+.navigation ul li:nth-child(1){
+    margin-bottom: 40px;
+    pointer-events: none;
+}
+
+.navigation ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.navigation ul li:hover a, .navigation ul li.hovered a{
+    color: var(--blue);
+}
+
+.navigation ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.navigation ul li a .icon i{
+    font-size: 1.75rem;
+}
+
+.navigation ul li a .title{
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    text-align: start;
+    white-space: nowrap;
+}
+
+.navigation ul li:hover a::before, .navigation ul li.hovered a::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -50px;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 35px 35px 0 10px var(--white);
+    pointer-events: none;
+}
+
+.navigation ul li:hover a::after, .navigation ul li.hovered a::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 35px -35px 0 10px var(--white);
+    pointer-events: none;
+}
+
+.main{
+    position: absolute;
+    width: calc(100% - 300px);
+    left: 18rem;
+    min-height: 100vh;
+    background: var(--white);
+    transition: 0.5s;
+}
+
+.cardBox{
+    position: relative;
+    width: 100%;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+}
+
+.cardBox .card{
+    position: relative;
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s;
+}
+
+.cardBox .card .numbers{
+    position: relative;
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: var(--blue);
+}
+
+.cardBox .card .cardName{
+    color: var(--black2);
+    font-size: 1.1rem;
+    margin-top: 5px;
+}
+
+.cardBox .card .iconBox{
+    font-size: 3.5rem;
+    color: var(--black2);
+}
+
+.cardBox .card:hover{
+    background: var(--blue)
+}
+
+.cardBox .card:hover .numbers,
+.cardBox .card:hover .cardName,
+.cardBox .card:hover .iconBox{
+    color: var(--white);
+}
+
+.details{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.details .users{
+    position: relative;
+    display: grid;
+    min-height: 350px;
+    width: 100%;
+    background: var(--white);
+    padding: 20px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+}
+
+.details .cardHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.cardHeader h2{
+    font-weight: 600;
+    color: var(--blue);
+}
+
+table .btn{
+    position: relative;
+    padding: 5px 10px;
+    background: var(--black1);
+    text-decoration: none;
+    color: var(--white);
+    border-radius: 6px;
+}
+
+.details table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.details table thead td{
+    font-weight: 600;
+}
+.details .users table tr{
+    color: var(--black1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.details .users table tr:last-child{
+    border-bottom: none;
+}
+
+.details .users table tbody tr:hover{
+    background: var(--blue);
+    color: var(--white);
+}
+
+.details .users table tr td{
+    padding: 10px;
+}
+
+.details .users table tr td:last-child{
+    text-align:center;
+}
+
+.premium{
+    padding: 2px 4px;
+    background: gold;
+    color: var(--white);
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.extra{
+    padding: 2px 4px;
+    background: green;
+    color: var(--white);
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.essential{
+    padding: 2px 4px;
+    background: grey;
+    color: var(--white);
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+table img{
+    width: 60px;
+    border-radius: 50%;
+}
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Close button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+#details-container {
+    display: none; /* Initially hidden */
+   position: fixed; /* Overlays the main content */
+   top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the modal */
+    background-color: white;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    z-index: 9999;
+    width: 300px;
+    height: 200px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5); 
+  }
+  
+  .close-btn {
+    background-color: transparent;
+    color: black;
+    border: 0.2rem solid --blue;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.5s ease;
+    transition: color 0.5s ease;
+    margin-left: 1rem;
+  }
+  
+  .close-btn:hover {
+    background-color: var(--blue);
+    color: white;
+  }
+  .yes-btn{
+    background-color: transparent;
+    color: black;
+    border: 0.2rem solid --blue;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 4rem;
+    margin-top: 3rem;
+    transition: background-color 0.5s ease;
+    transition: color 0.5s ease;
+  }
+  .yes-btn:hover {
+    background-color: var(--blue);
+    color: white;
+  }
+  #details-container2 {
+    display: none; /* Initially hidden */
+   position: fixed; /* Overlays the main content */
+   top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the modal */
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    width: 450px;
+    height: 200px;
+  }
+
+  #details-content2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+    #edit input{
+      margin-bottom: 1rem;
+    }
+    #edit input:focus{
+      outline: none;
+    }
+    #edit input::placeholder{
+      color: #999;
+    }
+    #edit input:focus::placeholder{
+      color: transparent;
+    }
+    
+
+
+  .save-btn {
+    background-color: transparent;
+    color: black;
+    border: 0.2rem solid --blue;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.5s ease;
+    transition: color 0.5s ease;
+    margin-left: 1rem;
+  }
+  
+  .save-btn:hover {
+    background-color: var(--blue);
+    color: white;
+  }
+  
