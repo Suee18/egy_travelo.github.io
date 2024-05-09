@@ -1,0 +1,122 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Styles for the bannerHolder to position it and make it a stacking context */
+
+
+/* Styles for the container to position it over the bannerHolder */
+
+  
+   a {
+    display: flex;
+    flex-direction: row; /* Change the direction from column to row */
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 20px 50px;
+    background: #201417;
+    border-radius: 50px;
+    color: rgb(136, 0, 0);
+    perspective: 500px;
+  }
+   
+  
+  .splitflap {
+    position: relative;
+    min-width: 20px;
+    height: 20px;
+    margin: 2px;
+    line-height: 20px;
+    font-size: 20px;
+    font-family: Monospace;
+    text-align: center;
+    color: white;
+  }
+  
+  .top {
+    position: relative;
+    height: 50%;
+    width: 100%;
+    background-color: #ff7289;
+    border-radius: 2px 2px 0 0;
+    overflow: hidden;
+    z-index: 0;
+  }
+  
+  .bottom {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin-top: -50%;
+    border-radius: 2px 2px 2px 2px;
+    z-index: -1;
+    background-color: #c50033;
+    background-image: linear-gradient(rgba(#ff7289, 0), #ff7289);
+    transform-origin: center;
+  }
+  
+  .nextHalf {
+    position: relative;
+    height: 50%;
+    width: 100%;
+    margin-top: -100%;
+    overflow: hidden;
+    border-radius: 2px 2px 0 0;
+    z-index: 2;
+    background-color: #c50033;
+    background-image: linear-gradient(#ff7289, rgba(#ff7289, 0));
+    transform-origin: left; /* Changed from bottom to left */
+  }
+  
+  .nextFull {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #ff7289;
+    margin-top: -50%;
+    border-radius: 2px 2px 2px 2px;
+    z-index: -3;
+  }
+  
+  .flip1 {
+    animation: flip1 ease-in 1;
+    animation-duration: 1s;
+  }
+  
+  .flip2 {
+    animation: flip2 ease-out 1;
+    animation-duration: 1s;
+  }
+  
+  @keyframes flip1 {
+    0% {
+      transform: rotateY(0deg);
+      background-color: #ff7289;
+    }
+    50% {
+      transform: rotateY(90deg);
+      background-color: #c50033;
+    }
+    100% {
+      transform: rotateY(90deg);
+    }
+  }
+  
+  @keyframes flip2 {
+    0% {
+      transform: rotateY(-90deg);
+    }
+    50% {
+      transform: rotateY(-90deg);
+    }
+    100% {
+      transform: rotateY(0deg);
+      background-color: #ff7289;
+    }
+  }
+  

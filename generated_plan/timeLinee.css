@@ -1,0 +1,210 @@
+.grey_light-block {
+  background-color: #ffffff00;
+}
+
+.aboveAll {
+  margin-top: 50rem;
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  width: 30%;
+  margin-left: 35%;  
+}
+.timeline {
+  position: relative;
+  /* background-image: linear-gradient(to bottom, #d0df7b, #a5a325, #bcd820, #b6b31e, #c55f30, #ff7e33, #d3560d, #f04f0f, #1427cf, #2a169c, #1f0c66, #020318); */
+   background-image: linear-gradient(to bottom, #03d9ff, #1fa9ad, #50aae6, #58a9eb, #758aeb, #3f7af8, #0061e0, #003fb4, #1427cf, #2a169c, #1f0c66, #090e68); 
+  width: 50px;
+  text-align: center;
+  transition: all 0.3s;
+}
+@media screen and (max-width: 768px) {
+  .timeline {
+    margin: 0 0 0 20px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .timeline {
+    margin: 0 auto;
+  }
+}
+/* the hour on the line  */
+.timeline .point .year {
+  padding-top: 10px;
+  color: #f1e7e7;
+}
+.timeline .point .bocata {
+  position: relative;
+  background-color: #ffffffb4; /*the color of the boxes*/
+  border-radius: 10px;
+  padding: 20px;
+  transition: all 0.3s;
+}
+@media screen and (max-width: 425px) {
+  .timeline .point .bocata {
+    width: 180px;
+  }
+  .timeline .point .bocata.little {
+    width: 180px;
+  }
+}
+@media screen and (min-width: 425px) and (max-width: 576px) {
+  .timeline .point .bocata {
+    width: 250px;
+  }
+  .timeline .point .bocata.little {
+    width: 250px;
+  }
+}
+@media screen and (min-width: 577px) {
+  .timeline .point .bocata {
+    width: 400px;
+  }
+  .timeline .point .bocata.little {
+    width: 250px;
+  }
+}
+.timeline .point .bocata + .bocata {
+  margin-top: 35px;
+}
+.timeline .point:nth-child(odd) .bocata {
+  box-shadow: -6px 10px 20px -20px #4a4a4a;
+  left: 100px;
+  position: relative;
+  z-index: 10;
+}
+.timeline .point:nth-child(odd) .bocata::after {
+  content: "";
+  width: 0;
+  height: 0;
+  display: block;
+  position: absolute;
+  z-index: 10;
+  border: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  margin-top: -10px;
+  top: 50%;
+  border-right: 10px solid #e2c0c0c9;  /*the color of the pop msg  */
+  left: -10px;
+}
+/* left boxes  */
+.timeline .point:nth-child(even) .bocata {
+  box-shadow: 6px 10px 20px -20px #4a4a4a;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  .timeline .point:nth-child(even) .bocata {
+    left: 100px;
+    position: relative;
+    z-index: 10;
+    
+  }
+  .timeline .point:nth-child(even) .bocata::after {
+    content: "";
+    width: 0;
+    height: 0;
+    display: block;
+    position: absolute;
+    z-index: 10;
+    border: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    margin-top: -10px;
+    top: 50%;
+    border-right: 10px solid #ffffff;
+    left: -10px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .timeline .point:nth-child(even) .bocata {
+    right: 425px;
+    position: relative;
+    z-index: 10;
+  }
+}
+@media screen and (min-width: 769px) and (min-width: 769px) {
+  .timeline .point:nth-child(even) .bocata.little {
+    right: 275px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .timeline .point:nth-child(even) .bocata::after {
+    content: "";
+    width: 0;
+    height: 0;
+    display: block;
+    position: absolute;
+    z-index: 10;
+    border: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    margin-top: -10px;
+    top: 50%;
+    border-left: 10px solid #ffffff;
+    left: auto;
+    right: -10px;
+  }
+}
+.timeline .point .arrow {
+  border: solid #e4e4e4; /*the color of the arrow */
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 20px;
+  transform: rotate(45deg);
+}
+.timeline .point:first-child .arrow, .timeline .point:last-child .arrow {
+  border: solid #f1f1f1; /*the color of the bottom arrow */
+  border-width: 0 12px 12px 0;
+  display: inline-block;
+  padding: 20px;
+  transform: rotate(45deg);
+}
+.timeline .point .arrow-clean {
+  border: solid #ffffff; /*the color of the bottom arrow */
+  border-width: 0 20px 20px 0;
+  display: inline-block;
+  padding: 20px;
+  position: absolute;
+  left: -5px;
+  bottom: -13px;
+  transform: rotate(45deg);
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 1.28px;
+  color: #042d6b; /*the color of the title of each paragraph  */
+}.timeline-body {
+    width: 20%;
+    margin-left: 30%;
+    padding: 10px;
+    background: #dbd8d8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.25);
+}
+.point {
+    margin-bottom: 10px;
+}
+.point .bocata {
+    background-color: #ffffff;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.point .year {
+    font-weight: bold;
+    color: #ffffff;
+}
+.point .bocata .row {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.point .bocata .col-md-6 {
+    flex: 0 0 48%;
+    max-width: 48%;
+}
