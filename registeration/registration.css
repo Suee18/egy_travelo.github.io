@@ -48,6 +48,7 @@ body {
 }
 
 .container {
+	margin-top: 5%;
 	background-color: var(--white);
 	border-radius: var(--button-radius);
 	box-shadow: 0 0.9rem 1.7rem rgba(0, 0, 0, 0.25),
@@ -244,7 +245,7 @@ input[name='sex'] {
     &:checked {
         &:after {
             box-shadow: 2px 2px 14px rgba(0,0,0,.4);
-            color:darkgoldenrod;
+            color:rgb(255, 255, 255);
         }
     }
 }
@@ -301,8 +302,7 @@ input[type="date"] {
   }
   
   button[type="submit"]:hover {
-	background: linear-gradient(109.6deg, rgb(252, 255, 26) 34.9%, rgb(66, 240, 233) 82.5%);
-  }
+background-color: rgb(9, 25, 70);  }
   small{
 	color: red;
   }

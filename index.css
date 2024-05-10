@@ -3,7 +3,7 @@
 *::before {
   box-sizing: border-box;
 }
-
+/* remove nav styling from here make sure the travelo styling is copird to  navbar css */
 body {
   margin: 0;
   padding: 0;
@@ -19,57 +19,7 @@ height: 100%;
 opacity: 0.05;
 
 }
-.logo{
-    font-family: 'Castellar';
-    font-size:1.6rem;
-    margin-left: 0.5rem;
-  }
-  .image-logo{
-    width: 5rem;
-    height: 5rem;
-  }
-  .logo-div{
-    display: flex;
-  }
-  header{
-    position: fixed;
-    width: 100%;
-    z-index: 9999;
-    padding: 0rem ;
-    height: 4rem;
-    top: 0;
-    left: 0;
-    backdrop-filter: blur(2px);
-    background-color: #033e7640;
-    transition: background-color 0.3s ease;
-  }
-  header.scrolled {
-    background-color: #777;
-  }
-  header nav{
-    color: #bc863e;
-    font-weight: 600;
-    max-width: 1400px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  header ul{
-    display: flex;
-    list-style: none;
-    align-items: center;
-  }
-  header ul a{
-    text-decoration: none;
-    padding: 1rem;
-    margin-right: 1rem;
-    text-transform: uppercase;
-    font-weight: 550;
-    font-size: 1.23rem;
-    color: #bc863e;
-    
-  }
+
 .container {
     position: relative;
   width: 100vw;
