@@ -1,114 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Profile Page</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css'>
-    <link rel="stylesheet" href="profile.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Page</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css'>
+  <link rel="stylesheet" href="profile.css">
 </head>
 
 
-
 <body>
+  <!-- <header>
+    <div id="NavbarLoggedin_call"></div>
+  </header> -->
+  <div class="main-container"> <!-- Main container wrapping all content -->
 
-<section>
-    <div class="rt-container">
-          <div class="col-rt-12">
-              <div class="Scriptcontent">
-              
-<!-- Profile -->
-<div class="profile py-4">
-  <div class="container">
-    <div class="row">
-        <div class="card shadow-sm">
-          <div class="card-header bg-transparent text-center">
-            <div class="aboveAll">
-        
-              <div id="avatar-display" class="avatar-container">
-                  <!-- Selected avatar will be displayed here -->
-              </div>
-              <div id="avatar-dropdown" class="dropdown-menu" style="display: none;">
-                  <div onclick="selectAvatar('PP.jpg')">
-                      <img src="PP.jpg" alt="PP" style="width: 30px; height: 30px; vertical-align: middle;">
+
+
+    <section>
+      <div class="rt-container">
+        <div class="col-rt-12">
+          <div class="Scriptcontent">
+
+            <!-- Profile -->
+            <div class="profile py-4">
+              <div class="container">
+                <div class="row">
+                  <div class="card shadow-sm">
+                    <div class="card-header bg-transparent text-center">
+                      <div class="aboveAll">
+                        <div id="avatar-display" class="avatar-container">
+                          <!-- Selected avatar will be displayed here -->
+                        </div>
+                        <div id="avatar-dropdown" class="dropdown-menu" style="display: none;">
+                          <!-- Avatar selection dropdown -->
+                          <div onclick="selectAvatar('PP.jpg')"><img src="PP.jpg" alt="PP"
+                              style="width: 30px; height: 30px;"></div>
+                          <div onclick="selectAvatar('PP1.jpg')"><img src="PP1.jpg" alt="PP1"
+                              style="width: 30px; height: 30px;"></div>
+                          <div onclick="selectAvatar('PP2.jpg')"><img src="PP2.jpg" alt="PP2"
+                              style="width: 30px; height: 30px;"></div>
+                          <div onclick="selectAvatar('PP3.jpg')"><img src="PP3.jpg" alt="PP3"
+                              style="width: 30px; height: 30px;"></div>
+                          <div onclick="selectAvatar('PP4.jpg')"><img src="PP4.jpg" alt="PP4"
+                              style="width: 30px; height: 30px;"></div>
+                          <div onclick="selectAvatar('PP5.jpg')"><img src="PP5.jpg" alt="PP5"
+                              style="width: 30px; height: 30px;"></div>
+                          <div onclick="selectAvatar('avatar7.png')"><img src="Avatars/avatar7.png" alt="Avatar 7"
+                              style="width: 30px; height: 30px;"></div>
+                          <div onclick="selectAvatar('avatar8.png')"><img src="Avatars/avatar8.png" alt="Avatar 8"
+                              style="width: 30px; height: 30px;"></div>
+                        </div>
+                        <button class="tooltip" onclick="toggleDropdown()">+<span class="tooltiptext">Add
+                            Avatar</span></button>
+                        <h3>Nada Sallam</h3>
+                      </div>
+                    </div>
                   </div>
-                  <div onclick="selectAvatar('PP1.jpg')">
-                      <img src="PP1.jpg" alt="PP1" style="width: 30px; height: 30px; vertical-align: middle;">
+                  <div class="col-lg-8">
+                    <div class="card shadow-sm">
+                      <div class="card-header bg-transparent border-0">
+                        <h3 class="mb-0"><i class="far fa-clone pr-1"></i>General Information</h3>
+                      </div>
+                      <div class="card-body pt-0">
+                        <table class="table table-bordered">
+                          <tr id="age">
+                            <th width="30%">Age</th>
+                            <td width="2%">:</td>
+                            <td>20</td>
+                          </tr>
+                          <tr id="gender">
+                            <th width="30%">Gender</th>
+                            <td width="2%">:</td>
+                            <td>Female</td>
+                          </tr>
+                          <tr id="nationality">
+                            <th width="30%">Nationality</th>
+                            <td width="2%">:</td>
+                            <td>Egypt</td>
+                          </tr>
+                          <tr id="email">
+                            <th width="30%">e-mail</th>
+                            <td width="2%">:</td>
+                            <td>sallamn42@gmail.com</td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                    <div style="height: 1em"></div>
+                    <div class="buttons">
+                      <button onclick="editProfile()" type="button" class="btn">Edit Profile</button>
+                      <button onclick="saveProfile()" type="button" class="btn btn-primary" disabled>Save
+                        Changes</button>
+                      <button type="button" class="btn">Change Password</button>
+                      <button type="button" class="btn">Delete Profile</button>
+                    </div>
                   </div>
-                  <div onclick="selectAvatar('PP2.jpg')">
-                    <img src="PP2.jpg" alt="PP2" style="width: 30px; height: 30px; vertical-align: middle;">
-                   </div>
-                   <div onclick="selectAvatar('PP3.jpg')">
-                  <img src="PP3.jpg" alt="PP3" style="width: 30px; height: 30px; vertical-align: middle;">
                 </div>
-              <div onclick="selectAvatar('PP4.jpg')">
-                <img src="PP4.jpg" alt="PP4" style="width: 30px; height: 30px; vertical-align: middle;">
-            </div>
-            <div onclick="selectAvatar('PP5.jpg')">
-              <img src="PP5.jpg" alt="PP5" style="width: 30px; height: 30px; vertical-align: middle;">
-          </div>
-          <div onclick="selectAvatar('avatar7.png')">
-            <img src="Avatars\avatar7.png" alt="Avatar 2" style="width: 30px; height: 30px; vertical-align: middle;">
-          </div>
-        <div onclick="selectAvatar('avatar8.png')">
-          <img src="Avatars\avatar8.png" alt="Avatar 2" style="width: 30px; height: 30px; vertical-align: middle;">
-      </div>
               </div>
-              <button class="tooltip" onclick="toggleDropdown()">+
-                <span class="tooltiptext">Add Avatar</span>
-              </button>
-    
-              <h3>Nada Sallam</h3>
+            </div>
+
           </div>
         </div>
       </div>
-      <div class="col-lg-8">
-        <div class="card shadow-sm">
-          <div class="card-header bg-transparent border-0">
-            <h3 class="mb-0"><i class="far fa-clone pr-1"></i>General Information</h3>
-          </div>
-          <div class="card-body pt-0">
-            <table class="table table-bordered">
-                <tr id="age">
-                    <th width="30%">Age</th>
-                    <td width="2%">:</td>
-                    <td id="info">20</td>
-                  </tr>
-                <tr id="gender">
-                <th width="30%">Gender</th>
-                <td width="2%">:</td>
-                <td id="info">Female</td>
-              </tr>
-              <tr id="nationality">
-                <th width="30%">Nationality</th>
-                <td width="2%">:</td>
-                <td id="info">Egypt</td>
-              </tr>
-              <tr id="email">
-                <th width="30%">e-mail</th>
-                <td width="2%">:</td>
-                <td id="info">sallamn42@gmail.com</td>
-              </tr>
-            </table>
-          </div>
-        </div>
-          <div style="height: 1em"></div>
-          <div class="buttons">
-            <button onclick="editProfile()" type="button" class="btn" id="btn1">Edit Profile</button>
-            <button onclick="saveProfile()" type="button" class="btn btn-primary" id="btnSave" disabled>Save Changes</button>
+    </section>
+
+  </div> <!-- Closing main-container -->
 
 
+  <script src="profile.js"></script>
+  <script src="/navBar_loggedin/navBarLoggedin.js"></script>
+</body>
 
-           <button type="button" class="btn" id="btn2">Change Password</button>
-            <button type="button" class="btn" id="btn3">Delete Profile</button>
-          </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<script src="profile.js"></script>
-	</body>
 </html>

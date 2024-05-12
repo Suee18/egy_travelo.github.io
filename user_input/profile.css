@@ -1,4 +1,4 @@
-body {
+ body {
     /* fallback for old browsers */
   background: #033f76;  /* Chrome 10-25, Safari 5.1-6 */
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -10,7 +10,20 @@ body {
   color: #000;
   
 
+} 
+/* .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -16px;
+flex-direction: column;
+} */
+.main-container {
+  margin: 0 auto;
+  max-width: 1200px; /* Or whatever width you prefer */
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Optional: adds shadow for better focus */
 }
+
 #avatar-display{
   background-image: url('profile.jpg');background-size: cover;
   background-position: center;

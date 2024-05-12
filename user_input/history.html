@@ -1,116 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="history.css">
     <title>Document</title>
 </head>
+
 <body>
-</head>
-<body>
-    <!--Header-->
-    <header>
-        <nav>
-            <ul class="menu">
-                <li class="list">
-                    <a href="#" id="menu-icon"><div class="bar"></div></a>
-                </li>
-                <li><div class="logo-div">
-                    <img src="Logo.png"><p class="logo">Travelo</p>
-                </div>
-            </li>
-            </ul>
-            <img src="profile.jpg" class="profile">
-        </nav>
-        <!--Side/Menu-->
-        <div class="side-menu" id="side-menu">
-            <div class="profilediv">
-                <img src="profile.jpg" class="profileli">
-                <p>username</p>
+    </head>
+
+    <body>
+        <!--Header-->
+        <header>
+
+            <div id="NavbarLoggedin_call"></div>
+        </header>
+        <!--History form-->
+        <section>
+            <div class="container-history">
+                <h2>History</h2>
+                <table>
+
+                    <head>
+                        <tr>
+                            <th>Date of Creating</th>
+                            <th colspan="2">Destination</th>
+                            <th>Check-In</th>
+                            <th>Check-Out</th>
+                            <th>Number of Days</th>
+                            <th>Package</th>
+                            <th></th>
+                        </tr>
+                    </head>
+                    <tbody>
+                        <tr id="row-two">
+                            <td></td>
+                            <td>First</td>
+                            <td>Last</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>10/10/2020</td>
+                            <td>Cairo</td>
+                            <td>Aswan</td>
+                            <td>12/10/2020</td>
+                            <td>16/10/2020</td>
+                            <td>4</td>
+                            <td>Standard </td>
+                            <td><a href="#" onclick="showDetails4()">More Details</a></td>
+                        </tr>
+                        <tr>
+                            <td>20/12/2021</td>
+                            <td colspan="2">Alexandria</td>
+                            <td>1/12/2021</td>
+                            <td>5/12/2021</td>
+                            <td>4</td>
+                            <td>Free </td>
+                            <td><a href="#" onclick="showDetails3()">More Details</a></td>
+                        </tr>
+                        <tr>
+                            <td>1/5/2022</td>
+                            <td colspan="2">cairo</td>
+                            <td>2/5/2022</td>
+                            <td>3/5/2022</td>
+                            <td>1</td>
+                            <td>free </td>
+                            <td><a href="#" onclick="showDetails2()">More Details</a></td>
+                        </tr>
+                        <tr>
+                            <td>9/5/2024</td>
+                            <td>Hurghada</td>
+                            <td>Cairo</td>
+                            <td>10/5/2024</td>
+                            <td>12/5/2024</td>
+                            <td>2</td>
+                            <td>Premium </td>
+                            <td><a href="#" onclick="showDetails1()">More Details</a></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-            <a href="profile.html" id="viewprofile" class="side-menu-link ">View Profile</a>
-            <a href="/review/reviews.html" id="review" class="side-menu-link">Add Review</a>
-            <a href="user.html" id="plan" class="side-menu-link ">Create Plan</a>
-            <a href="https://github.com/Suee18/egyTour.github.io" id="egypt" class="side-menu-link">About Egypt</a>
-            <a href="history.html" id="history" class="side-menu-link active">View History</a>
-            <a href="#" id="logout" class="side-menu-link">Log Out</a>
-        </div>
-       </header>
-   <!--History form-->
-   <section>
-    <div class="container-history">
-        <h2>History</h2>
-       <table>
-        <head>
-        <tr>
-            <th>Date of Creating</th>
-            <th colspan="2">Destination</th>
-            <th>Check-In</th>
-            <th>Check-Out</th>
-            <th>Number of Days</th>
-            <th>Package</th>
-            <th></th>
-        </tr>
-      </head>
-      <tbody>
-        <tr id="row-two">
-            <td></td>
-            <td>First</td>
-            <td>Last</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>10/10/2020</td>
-            <td>Cairo</td>
-            <td>Aswan</td>
-            <td>12/10/2020</td>
-            <td>16/10/2020</td>
-            <td>4</td>
-            <td>Standard </td>
-            <td><a href="#" onclick="showDetails4()">More Details</a></td>
-        </tr>
-        <tr>
-            <td>20/12/2021</td>
-            <td colspan="2">Alexandria</td>
-            <td>1/12/2021</td>
-            <td>5/12/2021</td>
-            <td>4</td>
-            <td>Free </td>
-            <td><a href="#" onclick="showDetails3()">More Details</a></td>
-        </tr>
-        <tr>
-            <td>1/5/2022</td>
-            <td colspan="2">cairo</td>
-            <td>2/5/2022</td>
-            <td>3/5/2022</td>
-            <td>1</td>
-            <td>free </td>
-            <td><a href="#" onclick="showDetails2()">More Details</a></td>
-        </tr>
-        <tr>
-            <td>9/5/2024</td>
-            <td>Hurghada</td>
-            <td>Cairo</td>
-            <td>10/5/2024</td>
-            <td>12/5/2024</td>
-            <td>2</td>
-            <td>Premium </td>
-            <td><a href="#" onclick="showDetails1()">More Details</a></td>
-        </tr>
-    </tbody>
-       </table>
-    </div>
-   <div class="details-container" id="details-container">
-    <div class="details-content">
-    </div>
-    <button class="close-btn" id="close-btn">Close</button>
-    </div>
-   </section>
-   <script src="history.js"></script>
-</body>
+            <div class="details-container" id="details-container">
+                <div class="details-content">
+                </div>
+                <button class="close-btn" id="close-btn">Close</button>
+            </div>
+        </section>
+        <script src="history.js"></script>
+        <script src="/navBar_loggedin/navBarLoggedin.js"></script>
+    </body>
+
 </html>

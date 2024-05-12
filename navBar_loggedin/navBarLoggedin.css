@@ -1,255 +1,271 @@
-body{
-    margin: 0;
-    padding: 0;
-    background-color: #033f76;
-    overflow-x: hidden;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #033f76;
+  overflow-x: hidden;
 
-  }
-  .profile{
-        width: 6rem;
-        height: 6rem;
-        border-radius: 3rem;
-        margin-top: 0.7rem; 
-        margin-left: 59rem;
-  }
+}
 
-  .logoIcon{
-    width: 7rem;
-    height: 7rem;
-    margin-top: 0rem;
-    margin-left: 0.5rem;
-  }
- 
-  .logo-div{
-    display: flex;
-  }
-  .logo{
-    font-size: 1.6rem;
-    width: 7rem;
-    height: 7rem;
-        padding-left: 0.5rem;
-    margin-top: 2.5rem;
-    font-family: 'Castellar';
-    color: #bc863e;
-  }
-  
-  header{
-    position: absolute;
-    width: 100%;
-    z-index: 9999;
-    padding: 0rem;
-    height: 5.5rem;
-    top: 0;
-    left: 0;
-    backdrop-filter: blur(2px);
-    background-color: rgba(255, 255, 255, 0.103) ;
+.profile {
+  width: 6rem;
+  height: 7rem;
+  border-radius: 3rem;
+  margin-top: 0.7rem;
+  margin-left: 59rem;
+}
 
-  }
-  header nav{
-    color: #bc863e;
-    font-weight: 600;
-    max-width: 1400px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .menu {
-    list-style: none; 
-    display: flex;
-    align-items: center;
-    margin-top: 0.2rem;
-  }
-  .side-menu {
-    position: fixed;
-    top: 0;
-    left: -64rem; 
-    width: 14rem;
-    height: 100vh; 
-    background-color: #fff;
-    transition: left 0.3s ease;
-    text-align: center;
-    padding: 1rem;
-  }
-  .side-menu.open {
-    left: 0; 
-    transition: left 0.3s ease; 
-  }
-  .side-menu a {
-    margin: 0;
-    padding: 0;
-    text-decoration: none; 
-    display: block;
-    padding: 10px 20px; 
-    color: #033f76; 
-    transition: color 0.3s ease; 
-  }
-  
-  .side-menu a:hover {
-    color: #bc863e; 
-  }
-  
-  .side-menu a.active {
-    font-weight: bold; 
-  }
-  
-  .side-menu a::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #bc863e; 
-    transition: width 0.3s ease; 
-  }
-  .side-menu a:not(:last-child) {
-    border-bottom: 1px solid #ccc; 
-  }
-  .side-menu a:hover::after {
-    width: 100%; 
-  }
-  
-  .list {
-    margin-left: -1.5rem;
-  }
-  
-  .list a {
-    padding: 0;
-    width: 37px;
-    height: 37px;
-    display: flex;
-    border-radius: 50%;
-    background-color: rgba(118, 134, 62, 0.289);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-    justify-content: center;
-    align-items: center;
-  }
-  .list .bar {
-    position: relative;
-    width: 52%;
-    height: 1.3px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 5px;
-  }
-  
-  .list .bar::before,
-  .list .bar::after {
-    content: "";
-    position: absolute;
-    transform: translate(-50%);
-    left: 50%;
-    width: 60%;
-    height: 120%;
-    background-color: inherit;
-    border-radius: 2px;
-  }
-  
-  .list .bar::before {
-    top: -4.5px;
-  }
-  
-  .list .bar::after {
-    top: 4.5px;
-  }
-  
-  .profilediv{
-    display: flex;
-    border-bottom: 1px solid #ccc;
-  }
-  .profilediv p{
-    margin-top: 2rem;
-    margin-right: 1.5rem;
-  }
-  .profileli{
-    width: 5rem;
-    height: 5rem;
-    margin-left: 0.5rem;
-    margin-right: 2rem;
-    margin-bottom: 2rem;
-    border-radius: 2rem;
-    position: relative;
-  }
-  .side-menu-link {
-    color: rgb(214, 208, 208); 
-    text-decoration: none; 
-    transition: color 0.3s ease; 
-  }
-  
-  .side-menu-link:hover,
-  .side-menu-link.active {
-    color: #bc863e; 
-  }
-  /********Sliding panrl******/
+.logoIcon {
+  width: 7rem;
+  height: 7rem;
+  margin-top: 0rem;
+  margin-left: 0.5rem;
+}
+
+.logo-div {
+  display: flex;
+}
+
+.logo {
+  font-size: 1.6rem;
+  width: 7rem;
+  height: 7rem;
+  padding-left: 0.5rem;
+  margin-top: 2.5rem;
+  font-family: 'Castellar';
+  color: #bc863e;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  z-index: 9999;
+  padding: 0rem;
+  height: 5.5rem;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(2px);
+  background-color: rgba(255, 255, 255, 0.103);
+
+}
+
+header nav {
+  color: #bc863e;
+  font-weight: 600;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-top: 0.2rem;
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -64rem;
+  width: 14rem;
+  height: 100vh;
+  background-color: #fff;
+  transition: left 0.3s ease;
+  text-align: center;
+  padding: 1rem;
+}
+
+.side-menu.open {
+  left: 0;
+  transition: left 0.3s ease;
+}
+
+.side-menu a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+  color: #033f76;
+  transition: color 0.3s ease;
+}
+
+.side-menu a:hover {
+  color: #bc863e;
+}
+
+.side-menu a.active {
+  font-weight: bold;
+}
+
+.side-menu a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #bc863e;
+  transition: width 0.3s ease;
+}
+
+.side-menu a:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+
+.side-menu a:hover::after {
+  width: 100%;
+}
+
+.list {
+  margin-left: -1.5rem;
+}
+
+.list a {
+  padding: 0;
+  width: 37px;
+  height: 37px;
+  display: flex;
+  border-radius: 50%;
+  background-color: rgba(118, 134, 62, 0.289);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  justify-content: center;
+  align-items: center;
+}
+
+.list .bar {
+  position: relative;
+  width: 52%;
+  height: 1.3px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+}
+
+.list .bar::before,
+.list .bar::after {
+  content: "";
+  position: absolute;
+  transform: translate(-50%);
+  left: 50%;
+  width: 60%;
+  height: 120%;
+  background-color: inherit;
+  border-radius: 2px;
+}
+
+.list .bar::before {
+  top: -4.5px;
+}
+
+.list .bar::after {
+  top: 4.5px;
+}
+
+.profilediv {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+
+.profilediv p {
+  margin-top: 2rem;
+  margin-right: 1.5rem;
+}
+
+.profileli {
+  width: 5rem;
+  height: 5rem;
+  margin-left: 0.5rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 2rem;
+  position: relative;
+}
+
+.side-menu-link {
+  color: rgb(214, 208, 208);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.side-menu-link:hover,
+.side-menu-link.active {
+  color: #bc863e;
+}
+
+/********Sliding panrl******/
 /* Initial hidden state of the panel */
 
 .panel {
   width: 250px;
-  position: fixed;  /* Changed from absolute to fixed for consistent positioning */
+  height:200rem;
+  position: fixed;
   top: 0;
-  right: -250px; /* Initially hidden off-screen */
-  background-color: #a8a0a0; /* Solid grey background */
+  right: -250px;
+  background-color: #a8a0a0;
   transition: right 0.3s ease-in-out;
   z-index: 100;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centers content horizontally */
+  align-items: center;
 }
 
 /* showing the panel */
 .panel-open {
   right: 0;
-    background-color: #a8a0a0a3;
+  background-color: #a8a0a0a3;
 
 
 }
-.profileIconPanel{
+
+.profileIconPanel {
   width: 15rem;
   height: 15rem;
   border-radius: 7rem;
-margin-top: 0.2rem;
-margin-left: 0.3rem;
+  margin-top: 0.2rem;
+  margin-left: 0.3rem;
 }
-.panel ul {
-  list-style-type: none; 
-  padding: 0; 
-  margin: 0; 
-  width: 100%; 
-  display: flex; 
-  flex-direction: column; 
-  background-color: #c4c2c2ae; 
-  justify-content: center; 
-   margin-top: 4rem;  
-   margin-bottom: 4.8rem;
 
+.panel ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #c4c2c2ae;
+  justify-content: center;
+  margin-top: 4rem;
+  margin-bottom: 4.8rem;
 
 }
 
 .panel li {
-  padding: 12px 20px; 
-  text-align: center; 
-  border-bottom: 1px solid #ccc; 
+  padding: 12px 20px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
 
 }
 
 .panel li:last-child {
-  border-bottom: none; 
+  border-bottom: none;
 }
 
 .panel a {
-  text-decoration: none; 
-  color: rgb(255, 254, 254); 
-  display: block; 
+  text-decoration: none;
+  color: rgb(255, 254, 254);
+  display: block;
 
 }
 
 .sidePanelChoice:hover a {
   color: #CCC;
 }
+
 .sidePanelChoice:hover a:hover {
   color: #19103f;
-  box-shadow:0  2px 0 0 currentcolor;
+  box-shadow: 0 2px 0 0 currentcolor;
 }
 
-  /*********************************************/
-  /*********************************************/
-  
+/*********************************************/
+/*********************************************/
