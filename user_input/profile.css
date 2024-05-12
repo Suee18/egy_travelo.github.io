@@ -1,162 +1,171 @@
- body {
-    /* fallback for old browsers */
-  background: #033f76;  /* Chrome 10-25, Safari 5.1-6 */
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background-image: url('blue\ -\ Copy.png');background-size: cover;
-  background-position: center;
-  padding: 0;
-  margin: 0;
-  font-family: 'Lato', sans-serif;
-  color: #000;
-  
+body {
+  /* fallback for old browsers */
+background: #033f76;  /* Chrome 10-25, Safari 5.1-6 */
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background-image: url('blue\ -\ Copy.png');background-size: cover;
+background-position: center;
+padding: 0;
+margin: 0;
+font-family: 'Lato', sans-serif;
+color: #000;
+
 
 } 
-/* .row {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -16px;
-flex-direction: column;
-} */
+.row {
+display: flex;
+flex-wrap: wrap;
+margin-right: -15px;
+margin-left: -15px;
+}
 .main-container {
-  margin: 0 auto;
-  max-width: 1200px; /* Or whatever width you prefer */
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Optional: adds shadow for better focus */
+margin: 0 auto;
+max-width: 1200px; /* Or whatever width you prefer */
+padding: 20px;
+margin-top: 150px;
+background-color: #ffffff36;
+box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Optional: adds shadow for better focus */
 }
 
 #avatar-display{
-  background-image: url('profile.jpg');background-size: cover;
-  background-position: center;
+background-image: url('profile.jpg');background-size: cover;
+background-position: center;
 }
-.profile .card {
-  border-radius: 10px;
+.profilee .card {
+  background-color: #f0f0f05d;
+
+border-radius: 10px;
 }
 
-.profile .card .card-header .profile_img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  margin: 10px auto;
-  border: 10px solid #ccc;
-  border-radius: 50%;
+.profilee .card .card-header .profile_img {
+width: 150px;
+height: 150px;
+object-fit: cover;
+margin: 10px auto;
+border: 10px solid #ccc;
+border-radius: 50%;
 }
 
-.profile .card h3 {
-  font-size: 20px;
-  font-weight: 700;
+.profilee .card h3 {
+font-size: 20px;
+font-weight: 700;
 }
 
-.profile .card p {
-  font-size: 16px;
-  color: #000;
+.profilee .card p {
+font-size: 16px;
+color: #000;
 }
 
-.profile .table th,
-.profile .table td {
-  font-size: 14px;
-  padding: 5px 10px;
-  color: #000;
+.profilee .table th,
+.profilee .table td {
+font-size: 14px;
+padding: 5px 10px;
+color: #000;
 }
 
 .btn {
-  background-color: var(--blue);
-  background: linear-gradient(109.6deg, rgb(188, 168, 69) 11.2%, rgb(244, 253, 0) 100.2%);
-  border-radius: 20px;
-  border: 1px solid var(--yellow);
-  color: var(--black);
-  cursor: pointer;
-  font-size: 0.8rem;
-  font-weight: bold;
-  letter-spacing: 0.1rem;
-  padding: 0.9rem 4rem;
-  text-transform: uppercase;
-  transition: transform 80ms ease-in;
-  padding: 2em;
+border-radius: 20px;
+cursor: pointer;
+font-size: 0.8rem;
+font-weight: bold;
+letter-spacing: 0.1rem;
+padding: 0.9rem 4rem;
+text-transform: uppercase;
+transition: transform 80ms ease-in;
+padding: 2em;
+background-color: #dab78b; 
+color: #ffffff; /* white text */  
+    box-shadow: 0 4px #8c7a61; 
+
 }
 
 .btn:active {
-  transform: scale(0.95);
+transform: scale(0.95);
 }
+.btn:hover{
 
+      background-color: #150e55; /* a lighter sandstone color for hover */
+      box-shadow: 0 6px #96a0a3; /* deeper shadow on hover */
+      transform: translateY(-2px); /* subtle lift effect */
+}
 .btn:focus {
-  outline: none;
+outline: none;
 }
 
 /* styles.css */
 .aboveAll
 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin: 50px auto;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+margin: 50px auto;
 }
 
 .avatar-container {
-  width: 200px;
-  height: 200px;
-  background-color: white;
-  border: 1px solid #ccc;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+width: 200px;
+height: 200px;
+background-color: white;
+border: 1px solid #ccc;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 
 .dropdown-menu div:hover {
-  transform: scale(3.1); 
-  z-index: 100; 
-  background-color: #f0f0f02f; /* Optional: changes background on hover */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.25); /* Adds shadow for 3D effect */
+transform: scale(3.1); 
+z-index: 100; 
+background-color: #f0f0f02f; /* Optional: changes background on hover */
+box-shadow: 0 4px 8px rgba(0,0,0,0.25); /* Adds shadow for 3D effect */
 }
 
 .dropdown-menu div {
-  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
-  padding: 8px 12px;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
+transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+padding: 8px 12px;
+display: flex;
+align-items: center;
+cursor: pointer;
 }
 
 .dropdown-menu img {
-  margin-right: 8px; /* Maintain space between the image and the text */
-  transition: transform 0.3s ease; /* Smooth transition for the image as well */
+margin-right: 8px; /* Maintain space between the image and the text */
+transition: transform 0.3s ease; /* Smooth transition for the image as well */
 
 }
 
 
 .dropdown-menu div:hover {
-  background-color: #f0f0f0;
+background-color: #f0f0f0;
 }
 
 /* Tooltip container */
 .tooltip {
-  position: relative;
-  display: inline-block;
+position: relative;
+display: inline-block;
 }
 
 .tooltip.tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
+visibility: hidden;
+width: 120px;
+background-color: #555;
+color: #fff;
+text-align: center;
+padding: 5px 0;
+border-radius: 6px;
 
-  /* Position the tooltip text */
-  position: absolute;
-  z-index: 1;
-  bottom: 100%;
-  left: 50%;
-  margin-left: -60px;
+/* Position the tooltip text */
+position: absolute;
+z-index: 1;
+bottom: 100%;
+left: 50%;
+margin-left: -60px;
 
-  /* Fade in tooltip */
-  opacity: 0;
-  transition: opacity 0.3s;
+/* Fade in tooltip */
+opacity: 0;
+transition: opacity 0.3s;
 }
 
 .tooltip:hover.tooltiptext {
-  visibility: visible;
-  opacity: 1;
+visibility: visible;
+opacity: 1;
 }

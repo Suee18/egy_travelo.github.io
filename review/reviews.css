@@ -164,11 +164,11 @@ body{
 }
 
 .btn {
-	background-color: var(--blue);
-	background: linear-gradient(to right, red , yellow);
+    background-color: #b08e63; 
+
+    box-shadow: 0 6px #96a0a3; 
+    color: #ffffff;
 	border-radius: 20px;
-	border: 1px solid var(--yellow);
-	color: var(--black);
 	cursor: pointer;
 	font-size: 0.8rem;
 	font-weight: bold;
@@ -179,7 +179,12 @@ body{
     padding: 2em;
     margin-bottom: 10px;
 }
-
+.btn:hover{
+    background-color: #312693; 
+    color: #ffffff;
+    box-shadow: 0 4px #8c7a61; 
+  
+}
 .btn:active {
 	transform: scale(0.95);
 }
