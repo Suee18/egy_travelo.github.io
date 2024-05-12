@@ -61,9 +61,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+   
     width: 100%;
     margin-top: 20%;
 }
@@ -84,7 +82,7 @@ body{
     height: 5rem;
     border-radius: 50%;
     overflow: hidden;
-    margin-right: 10px;
+    /* margin-right: 10px; */
 }
 
 .profile-img img{
@@ -92,6 +90,7 @@ body{
     height: 100%;
     object-fit: cover;
     object-position: center;
+    z-index: 1000;
 }
 
 .profile{
