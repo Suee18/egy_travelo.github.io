@@ -1,27 +1,46 @@
-<link rel="stylesheet" href="navBarLoggedin.css">
-<body>
-<header>   <nav>
-<ul class="menu">
- 
-    <li><div class="logo-div">
-        <img src="/navBar/Logo.png"><p class="logo">Travelo</p>
-    </div>
-</li>
-</ul>
-<img src="/review/Avatars/avatar7.png" class="profile">
-</nav>
-<!--Side/Menu-->
-<div class="side-menu" id="side-menu">
-<div class="profilediv">   
-     <p>username</p>
+<link rel="stylesheet" href="/navBar_loggedin/navBarLoggedin.css">
+
+<header>
+    <nav>
+        <ul class="menu">
+
+            <li>
+                <div class="logo-div">
+                    <img src="/navBar/Logo.png" class="logoIcon">
+                    <p class="logo">Travelo</p>
+                    <img src="/review/Avatars/avatar7.png" class="profile">
+
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div id="slidingPanel" class="panel">
+        <!-- Content of the panel -->
+        <img src="/review/Avatars/avatar7.png" class="profileIconPanel">
+
+        <ul class="panellist">
+            <li class="sidePanelChoice" id="sidePanelChoice">
+                <a href="/user_input/user.html">Create a plan</a>
+            </li>
+            <li class="sidePanelChoice" id="sidePanelChoice">
+                <a href="/user_input/history.html">View previous plans</a>
+            </li>
+            <li class="sidePanelChoice" id="sidePanelChoice">
+                <a href="/user_input/profile.html">View profile</a>
+            </li>
+            <li class="sidePanelChoice" id="sidePanelChoice">
+                <a href="/review/reviews.html">Add a review</a>
+            </li>
+            <li class="sidePanelChoice" id="sidePanelChoice">
+                <a href="https://Suee18.github.io/egyTour.github.io/">Egypt virtual tour</a>
+            </li>
+
+            <li class="sidePanelChoice" id="sidePanelChoice">
+                <a href="/index.html">Log out</a>
+            </li>
+        </ul>
+    
 </div>
-<a href="test3.html" id="viewprofile" class="side-menu-link ">View Profile</a>
-<a href="#" id="review" class="side-menu-link">Add Review</a>
-<a href="user.html" id="plan" class="side-menu-link active">Create Plan</a>
-<a href="#" id="egypt" class="side-menu-link">About Egypt</a>
-<a href="history.html" id="history" class="side-menu-link ">View History</a>
-<a href="#" id="logout" class="side-menu-link">Log Out</a>
 </div>
 </header>
-<script src="navBarLoggedin.js"></script>
-</body>
+    <script src="navBarLoggedin.js"></script>
