@@ -1,25 +1,408 @@
+/* Google fonts - Open Sans */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
-table {
-    width: 100%;
-    border-collapse: collapse;
+.hotelT a, .hotelT2 a, .hotelT3 a, .hotelT4 a {
+  text-decoration: none;
+  transition: color 0.2s ease-out;
 }
 
-th, td {
-    border: 1px solid #dddddd;
-    padding: 10px;
-    text-align: left;
+.hotelT a {
+  color: #4fc0d2;
 }
 
-thead tr {
-    background-color: #120635;
-    color: white;
+.hotelT a:hover {
+  color: #268695;
 }
 
-tbody tr:hover {
-    background-color: #09154d; /* Darker shade on hover */
+.hotelT2 a {
+  color: #52d29a;
 }
 
-tbody td {
-    background-color: #06165e; /* Normal background color */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
+.hotelT2 a:hover {
+  color: #279766;
+}
+
+.hotelT3 a {
+  color: rgba(255, 0, 55, 0.7);
+}
+
+.hotelT3 a:hover {
+  color:rgba(213, 2, 255, 0.7);
+}
+
+.hotelT4 a {
+  color:rgba;
+}
+
+.hotelT4 a:hover {
+  color: #000000;
+}
+
+
+.wrapperHo {
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+    /* margin-top: 10%; */
+  width: 98%;
+  height: 100vh;
+  /* max-width: 1000px; */
+  margin: 20px auto 100px auto;
+  padding: 0;
+  /* background: rgba(255, 255, 255, 0.911); */
+  color: rgba(255, 255, 255, 0.9);
+  overflow: hidden;
+  
+  /* position: relative; */
+}
+
+/* lists */
+.rowH ul {
+  margin: 0;
+  padding: 0;
+}
+
+.rowH ul li {
+  margin: 0;
+  font-size: 16px;
+  font-weight: normal;
+  list-style: none;
+  display: inline-block;
+  width: 20%;
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 767px) and (min-width: 480px) {
+  .rowH ul li {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .rowH ul li {
+    font-size: 13px;
+  }
+}
+
+/* .titleH ul li {
+
+} */
+
+.rowH ul li {
+  padding: 5px 3px;
+}
+
+/* rowHs */
+.rowH {
+  padding: 20px 0;
+  height: 70px;
+  font-size: 0;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.2s ease-out;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.rowH:hover {
+  background-color: rgba(255, 251, 251, 0.253);
+  height: 65px;
+}
+@media only screen and (max-width: 767px) {
+  .rowH:hover {
+    height: 85px;
+  }
+}
+@media only screen and (max-width: 359px) {
+  .rowH:hover {
+    height: 105px;
+  }
+}
+
+.titleH {
+  padding: 25px 0 5px 0;
+  height: 75px;
+  font-size: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-left: 3px solid rgba(255, 255, 255, 0.1);
+}
+
+.titleH:hover {
+  height: 45px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-left: 3px solid rgba(255, 255, 255, 0.1);
+}
+
+@media only screen and (max-width: 767px) {
+  .titleH-hide {
+    display: none;
+  }
+}
+
+.hotelT {
+  border-left: 3px solid #1c616c;
+}
+
+.hotelT:hover {
+  border-left: 3px solid #4fc0d2;
+}
+
+.hotelT2 {
+  border-left: 3px solid #1d6e4b;
+}
+
+.hotelT2:hover {
+  border-left: 3px solid #52d29a;
+}
+
+.hotelT3 {
+  border-left: 3px solid rgba(211, 23, 86, 0.7);
+}
+
+.hotelT3:hover {
+  border-left: 3px solid rgba(231, 196, 104, 0.7);
+}
+
+.hotelT4 {
+  border-left: 3% solid #952f12;
+}
+
+.hotelT4:hover {
+  border-left: 3px solid#952f12;
+}
+
+/* rowH one - fadeIn */
+.rowH-fadeIn-wrapper {
+  opacity: 0;
+  font-size: 0;
+  height: 0;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.2s ease-out;
+  -webkit-animation: fadeIn 0.4s ease-out 2s 1 alternate;
+          animation: fadeIn 0.4s ease-out 2s 1 alternate;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.rowH-fadeIn-wrapper:hover {
+  height: 100%;
+}
+@media only screen and (max-width: 767px) {
+  .rowH-fadeIn-wrapper:hover {
+    height: 100%;
+  }
+}
+@media only screen and (max-width: 359px) {
+  .rowH-fadeIn-wrapper:hover {
+    height: 75px;
+  }
+}
+
+.fadeIn {
+  padding: 100% 0;
+  font-size: 0;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.fadeIn:hover {
+  background-color: rgba(26, 26, 26, 0.9);
+}
+
+/* rowH two - fadeOut */
+.rowH-fadeOut-wrapper {
+  font-size: 0;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.2s ease-out;
+  -webkit-animation: fadeOut 0.4s ease-out 8s 1 alternate;
+          animation: fadeOut 0.4s ease-out 8s 1 alternate;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 1;
+  height: 65px;
+}
+
+.rowH-fadeOut-wrapper:hover {
+  height: 100px;
+}
+
+/* update content */
+.update-rowH {
+  -webkit-animation: update 0.5s ease-out 12s 1 alternate;
+          animation: update 0.5s ease-out 12s 1 alternate;
+}
+
+.update1 {
+  position: absolute;
+  top: 25px;
+  display: inline-block;
+  opacity: 1;
+  -webkit-animation: update1 1s ease-out 12s 1 alternate;
+          animation: update1 1s ease-out 12s 1 alternate;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.update2 {
+  position: absolute;
+  top: 25px;
+  display: inline-block;
+  opacity: 0;
+  -webkit-animation: update2 4s ease-out 13s 1 alternate;
+          animation: update2 4s ease-out 13s 1 alternate;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+/* more content */
+ul.more-content li {
+  position: relative;
+  top: 22px;
+  font-size: 13px;
+  margin: 0;
+  padding: 10px 13px;
+  display: block;
+  height: 50px;
+  width: 100%;
+  color: rgba(128, 128, 128, 0.9);
+}
+@media only screen and (max-width: 767px) {
+  ul.more-content li {
+    font-size: 11px;
+  }
+}
+
+/* small content */
+.small {
+  color: rgba(102, 102, 102, 0.9);
+  font-size: 10px;
+  padding: 0 10px;
+  margin: 0;
+}
+@media only screen and (max-width: 767px) {
+  .small {
+    display: none;
+  }
+}
+
+/* keyframe animations */
+@-webkit-keyframes fadeIn {
+  from {
+    background: rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    padding: 0;
+  }
+  to {
+    background: rgba(51, 51, 51, 0.1);
+    opacity: 1;
+    padding: 0 0 65px 0;
+  }
+}
+@keyframes fadeIn {
+  from {
+    background: rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    padding: 0;
+  }
+  to {
+    background: rgba(51, 51, 51, 0.1);
+    opacity: 1;
+    padding: 0 0 65px 0;
+  }
+}
+@-webkit-keyframes fadeOut {
+  from {
+    background: rgba(51, 51, 51, 0.1);
+    opacity: 1;
+    height: 65px;
+  }
+  to {
+    background: rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    height: 0;
+  }
+}
+@keyframes fadeOut {
+  from {
+    background: rgba(51, 51, 51, 0.1);
+    opacity: 1;
+    height: 65px;
+  }
+  to {
+    background: rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    height: 0;
+  }
+}
+@-webkit-keyframes update {
+  0% {
+    background: rgba(51, 51, 51, 0.1);
+  }
+  50% {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  100% {
+    background: rgba(51, 51, 51, 0.1);
+  }
+}
+@keyframes update {
+  0% {
+    background: rgba(51, 51, 51, 0.1);
+  }
+  50% {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  100% {
+    background: rgba(51, 51, 51, 0.1);
+  }
+}
+@-webkit-keyframes update1 {
+  0% {
+    opacity: 0;
+  }
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes update1 {
+  0% {
+    opacity: 0;
+  }
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes update2 {
+  0% {
+    opacity: 0;
+    color: rgba(255, 255, 255, 0.9);
+  }
+  20% {
+    opacity: 1;
+    color: #52d29a;
+  }
+  100% {
+    opacity: 1;
+    color: rgba(255, 255, 255, 0.9);
+  }
+}
+@keyframes update2 {
+  0% {
+    opacity: 0;
+    color: rgba(255, 255, 255, 0.9);
+  }
+  20% {
+    opacity: 1;
+    color: #52d29a;
+  }
+  100% {
+    opacity: 1;
+    color: rgba(255, 255, 255, 0.9);
+  }
 }

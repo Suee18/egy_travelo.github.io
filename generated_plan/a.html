@@ -1,52 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="a.css">
-    <link rel="stylesheet" href="flipingBanner.css">
-    <link rel="stylesheet" href="https://unpkg.com/open-props/normalize.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/open-props">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="a.css">
+  <link rel="stylesheet" href="flipingBanner.css">
+  <link rel="stylesheet" href="https://unpkg.com/open-props/normalize.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/open-props">
 
 </head>
+
 <body>
-    
-<div class="scrolls">
-    <div class="up"><span></span>
-      <div class="center"><span> <br></span></div>
-    </div>
-    
-    <div class="down"><span></span></div>
-  </div>
+ 
 
   <div class="smooth">
 
 
-
+    <!-- -------header-------------nav bar---------------------------- -->
     <div class="header">
-       <ul>
-         <li><a href="#about">plane tickets</a></li>
-         <li><a href="#thePlanSection">The plan</a></li>
-        <li><a href="#price">Hotels</a></li>
-        <li><a href="#contact">Transportation</a></li>
-
-      </ul> 
+      <div id="NavbarLoggedin_call"></div>
     </div>
 
 
+    <!-- ---------s1-----------Flipping banner---------------------------- -->
 
-    <section id="home">
+    <section id="screen1">
+      <div class="planNavBarCont"><div id="planNavBar_call"></div></div>
+
       <div class="container"></div>
     </section>
 
 
 
 
+    <!-- ---------s2-----------tickets---------------------------- -->
 
-    <section id="about">
+    <section id="screen2">
 
-      <h2>-Best flights deals-</h2>
+
+      <div id="title-tooltipHolder">
+        <p id="Screen2Title">-Best flights deals-</p>
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap"
+          rel="stylesheet">
+        <div class="item-hints">
+          <div class="hint" data-position="4">
+            <span class="hint-radius"></span>
+            <span class="hint-dot"></span>
+            <div class="hint-content do--split-children">
+              <p>Click on each ticket to redirect to te provider and book it</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!--tickets-->
       <div class="scrollContainer">
         <div id="ticketHolder"></div>
         <div id="ticketHolder2"></div>
@@ -54,36 +65,81 @@
         <div id="ticketHolder4"></div>
         <div id="ticketHolder5"></div>
         <div id="ticketHolder6"></div>
-    </div>
-    
-    </section>
+      </div>
 
-    <section id="price">
-      <h2>Best hotel deals</h2>
-      <div id="hotelTable_call"></div>
     </section>
 
 
+    <!-- ---------s3-----------hotels---------------------------- -->
+
+    <section id="screen3">
 
 
-    <section id="thePlanSection">
-        <h2>Your days</h2>
-         <div id="daysPlanHolder"></div> 
-      </section>
-  
+      
+      <div id="title-tooltipHolder">
+        <p id="Screen3Title">-Stays-</p>
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap"
+          rel="stylesheet">
+        <div class="item-hints">
+          <div class="hint" data-position="4">
+            <span class="hint-radius"></span>
+            <span class="hint-dot"></span>
+            <div class="hint-content do--split-children">
+              <p>find out more about each hotel in the URL... You can book online too </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+     <div class="hotelcont">
+        <div id="hotels_call"></div>
+     </div>
+    </section>
+
+
+
+    <!-- ---------s4-----------Days---------------------------- -->
+
+    <section id="screen4">
+
+      <div id="title-tooltipHolder">
+        <p id="Screen2Title">-Days time lines-</p>
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap"
+          rel="stylesheet">
+        <div class="item-hints">
+          <div class="hint" data-position="4">
+            <span class="hint-radius"></span>
+            <span class="hint-dot"></span>
+            <div class="hint-content do--split-children">
+              <p>Click on each day banner to spread it then scroll down to dicover the plan customized specially for you!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!--days-->
+      <div id="daysPlanHolder"></div>
+    </section>
+
+    <!-- ---------s5---------Transportation---------------------------- -->
 
     <section id="contact">
-    <div>
-      <h2>This is the tranportation recommendation</h2>
-    </div>
+      <div>
+        <h2>This is the tranportation recommendation</h2>
+      </div>
     </section>
-
-
-
-
-
-
-
 
 
 
@@ -93,8 +149,12 @@
     <script src="ticket.js"></script>
     <script src="flippingBanner.js"></script>
     <script src="hotels.js"></script>
-<script src="askUsForm.js"></script>
-<script src="days.js"></script>
+    <script src="askUsForm.js"></script>
+    <script src="days.js"></script>
+    <script src="/navBar_loggedin/navBarLoggedin.js"></script>
+    <script src="planNavBar.js"></script>
   </div>
+
 </body>
+
 </html>

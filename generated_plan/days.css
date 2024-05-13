@@ -19,7 +19,7 @@ body {
     position: relative;
     display: block;
     height: 90%;
-    background-color:rgb(7, 19, 53); /* If you want a white background */
+    background-color:rgb(7, 19, 53); /* card background */
     text-align: center;
     padding: 10px; /* Optional, for spacing inside the card */
     box-shadow: 0px 4px 8px rgba(5, 5, 5, 0); /* Optional, for shadow */
@@ -47,13 +47,13 @@ body {
 
 .icon {
     position: absolute;
-    bottom: 10px; /* Adjust as needed */
-    left: 10px; /* Adjust as needed */
-    background-color: #ffffff5b; /* For visibility */
-    color: #fff; /* Text color */
+    bottom: 10px; 
+    left: 10px;
+    background-color: #e4eeeea1;
+    color: #2c2b2b; /* Text color */
     border-radius: 50%; /* Makes it a circle */
-    width: 50px; /* Adjust as needed */
-    height: 50px; /* Adjust as needed */
+    width: 50px; 
+    height: 50px; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -124,7 +124,7 @@ border: 10px solid #07273a;
 }
 
 .description p {
-    color: #b0b0ba;
+    color: #b4b0ba;
     padding-top: 5px;
 }
 
@@ -145,23 +145,23 @@ input:checked + label .description {
     transform: translateY(0) !important;max-height: 300px;
 }
 
-/* 
+
 .card[for="c1"]{
-    background-image: url(imaqge.png);
-} */
-/* .card[for="c2"]{
-    background-image: url(imaqge.png);
+    background-image: url(daysBG.png);
+} 
+.card[for="c2"]{
+    background-image: url(daysBG.png);
 }.card[for="c3"]{
-    background-image: url(imaqge.png);
+    background-image: url(daysBG.png);
 }.card[for="c4"]{
-    background-image: url(vasw.png);
+    background-image: url(daysBG.png);
 }
 .card[for="c5"]{
-    background-image: url(vasw.png);
+    background-image: url(daysBG.png);
 }
 .card[for="c6"]{
-    background-image: url(vasw.png);
-} */
+    background-image: url(daysBG.png);
+} 
 #btn3, #btn1{
     background-color: #007BFF;
     color: white;
@@ -172,15 +172,15 @@ input:checked + label .description {
     margin-top: 10px;
     height:90vh;
     width:100%;
-    background-image: url('down-arrow.gif'); /* Adjust the path to your image */
-    background-size: cover; /* This could also be contain based on your need */
+    background-image: url('down-arrow.gif'); 
+    background-size: cover; 
     background-position: center; /* Centers the background image */
     color: white; /* Text color */
-    padding: 10px 20px; /* Padding around the text */
+    padding: 10px 20px; 
 
-    width: 70px; /* Adjust based on your need */
-    height: 70px; /* Adjust based on your need */
-    text-align: center; /* Ensures text is centered */
+    width: 70px; 
+    height: 70px; 
+    text-align: center; 
     margin-top: 200px;
 
 }
@@ -202,10 +202,10 @@ background-color: #ffffff00;
     border: none;
     cursor: pointer;
     border-radius: 5px;
-    background-image: url('delivery.png'); /* Adjust the path to your image */
-    background-size: cover; /* This could also be contain based on your need */
-    background-position: center; /* Centers the background image */
-    padding: 10px 20px; /* Padding around the text */
+    background-image: url('delivery.png'); 
+    background-size: cover; 
+    background-position: center; 
+    padding: 10px 20px; 
     border: none; 
     cursor:pointer;
     text-align: center; 

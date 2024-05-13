@@ -31,11 +31,11 @@
 /* the hour on the line  */
 .timeline .point .year {
   padding-top: 10px;
-  color: #f1e7e7;
+  color: #ffffff;
 }
 .timeline .point .bocata {
   position: relative;
-  background-color: #ffffffb4; /*the color of the boxes*/
+  background-color: #ffffffe5; /*the color of the boxes*/
   border-radius: 10px;
   padding: 20px;
   transition: all 0.3s;
@@ -85,7 +85,7 @@
   border-bottom: 10px solid transparent;
   margin-top: -10px;
   top: 50%;
-  border-right: 10px solid #e2c0c0c9;  /*the color of the pop msg  */
+  border-right: 10px solid #f1eded;  /*the color of the pop msg  */
   left: -10px;
 }
 /* left boxes  */
@@ -115,7 +115,7 @@
     border-bottom: 10px solid transparent;
     margin-top: -10px;
     top: 50%;
-    border-right: 10px solid #ffffff;
+    border-right: 10px solid #dddddd;
     left: -10px;
   }
 }
@@ -182,8 +182,10 @@
 }.timeline-body {
     width: 20%;
     margin-left: 30%;
+    text-shadow: #003fb4;
     padding: 10px;
     background: #dbd8d8;
+    color:aqua;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.25);
 }
@@ -206,5 +208,6 @@
 }
 .point .bocata .col-md-6 {
     flex: 0 0 48%;
-    max-width: 48%;
+    max-width: 48%;    color: #060f20;
+
 }
